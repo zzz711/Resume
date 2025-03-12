@@ -1,0 +1,239 @@
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Pete Kayuha} \\[7.5pt]
+\\
+Dayton, OH 45402
+\\
+\href{https://github.com/zzz711}{\raisebox{-0.05\height}\faGithub\ zzz711} \ $|$ \ 
+\href{https://www.linkedin.com/in/pkayuha/}{\raisebox{-0.05\height}\faLinkedin\ Pete Kayuha} \ $|$ \ 
+\href{mailto:pete.kayuha@proton.me}{\raisebox{-0.05\height}\faEnvelope \ pete.kayuha@proton.me} \
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+Skilled \textbf{Software Engineer} with experience using \texttt{C\#}, Python, Java, SQL, Linux, Git, Android and C++.  Excel in problem solving, diligence and attention to detail.
+
+%Experience
+\section{Work Experience}
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Software Developer - CACI International Inc} & \hfill May 2017 - Present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Created quiz application using \texttt{C\#}, ASP.NET Core, Blazor, and SQL.
+        \item[--] Updated \texttt{C\#} and C++ code to connect to SQL database using SSL.
+        \item[--] Added functionality to in house WPF applications using \texttt{C\#}.
+        \item[--] Modified and added functionality to a Windows Form application using \texttt{C\#} and SQL.
+        \item[--] Upgraded \texttt{C\#} and C++ code base to Visual Studio 2017.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2011 - 2016 & Bachelors of Science (Computer Science) at \textbf{University Of Cincinnati} \hfill \normalsize \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Co-ops and such
+%----------------------------------------------------------------------------------------
+
+\section{Co-ops And Other Activities}
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+    \textbf{Quality Assurance Co-op - Qvidian } & \hfill January 2015 - August 2015 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Tested internal web services using SoapUI, Groovy, VB, and SQL.
+            \item[--] Wrote batch script to automate the running of the web service testing.
+        \end{itemize}
+        \end{minipage}
+    }
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+    \textbf{Software Engineering Co-op - Transmissions LLC. } & \hfill August 2013 - August 2014 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Contributed to a plugin for Adobe Illustrator in Objective-C++.
+            \item[--] Developed a Windows Phone app in \texttt{C\#} that performed functions based on voice commands.
+            \item[--] Built an Android app in Java that filtered out notifications based on phone contacts.
+            \item[--] Created an Access database involving VBA code.            
+        \end{itemize}
+        \end{minipage}
+    }
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	ACTIVITIES
+%----------------------------------------------------------------------------------------
+\section{Activities}
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+    \textbf{Dog Walker} & \hfill - SICSA Animal Shelter 2023 - Present \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+    \textbf{Hackathons} & \hfill - MHacks Winter (2014).  Revolution UC Spring 2014, Fall 2014, Spring 2016 \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+    \textbf{Treasurer} & \hfill - University of Cincinnati Robotics Team 2012 - 2014 \\[3.75pt]
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\begin{itemize}
+    \item \texttt{C\#}
+    \item Linux
+    \item C++
+    \item HTML
+    \item WinForms
+\end{itemize}
+&
+\begin{itemize}
+    \item .Net
+    \item Java
+    \item Git
+    \item CSS
+    \item WPF    
+\end{itemize}
+&
+\begin{itemize}
+    \item SQL
+    \item Python
+    \item JavaScript
+    \item Batch
+    \item Qt
+\end{itemize}
+\end{tabular}
+
+\section{Areas Of Interest}
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\begin{itemize}
+    \item Asp.Net Core
+    \item Angular
+\end{itemize}
+&
+\begin{itemize}
+    \item Web API
+    \item Typescript
+\end{itemize}
+&
+\begin{itemize}
+    \item React
+    \item \texttt{CI/CD}
+\end{itemize}
+\end{tabular}
+
+\vfill
+% \center{\footnotesize Last updated: \today}
+
+\end{document}
