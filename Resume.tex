@@ -33,6 +33,11 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
 
+\usepackage{fix-cm}
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{50}{60}}
+\makeatother
+
 %tabularx environment
 \usepackage{tabularx}
 
@@ -93,22 +98,44 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Pete Kayuha} \\[7.5pt]
+\HUGE{Pete Kayuha} \\[7.5pt]
 \\
 Dayton, OH 45402
 \\
 \href{https://github.com/zzz711}{\raisebox{-0.05\height}\faGithub\ zzz711} \ $|$ \ 
 \href{https://www.linkedin.com/in/pkayuha/}{\raisebox{-0.05\height}\faLinkedin\ Pete Kayuha} \ $|$ \ 
 \href{mailto:pete.kayuha@proton.me}{\raisebox{-0.05\height}\faEnvelope \ pete.kayuha@proton.me} \
+\\[7.5pt]
 \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\HUGE{Software Developer} \\[7.5pt]
+Detail-oriented and customer-focused \textbf{Software Engineer} with experience in \texttt{C\#}, SQL, and .Net. Proven track record of enhancing legacy applications, adding new functionality, and modernizing codebases to improve usability and performance. Strong problem solver with a background in both QA and software engineering, bringing a thoughtful, efficient approach to building and maintaining reliable, user-centered software.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Areas of Expertise}
+\begin{center}
+    \begin{tabular}{|p{0.3\textwidth} | p{0.3\textwidth} | p{0.3\textwidth}|} 
+     \hline
+     \texttt{C\#} & .Net & SQL \\
+     \hline
+     Linux & Java & Python \\
+     \hline
+     Git & C++ & JavaScript \\
+     \hline
+     HTML & CSS & Batch \\
+     \hline
+     WinForms & WPF & Qt \\
+     \hline
+    \end{tabular}
+\end{center}    
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-Skilled \textbf{Software Engineer} with experience using \texttt{C\#}, Python, Java, SQL, Linux, Git, Android and C++.  Excel in problem solving, diligence and attention to detail.
 
 %Experience
 \section{Work Experience}
@@ -123,19 +150,11 @@ Skilled \textbf{Software Engineer} with experience using \texttt{C\#}, Python, J
         \item[--] Updated \texttt{C\#} and C++ code to connect to SQL database using SSL.
         \item[--] Added functionality to in house WPF applications using \texttt{C\#}.
         \item[--] Modified and added functionality to a Windows Form application using \texttt{C\#} and SQL.
+        \item[--] Extended functionality of an application using Java and OpenMap library.
         \item[--] Upgraded \texttt{C\#} and C++ code base to Visual Studio 2017.
     \end{itemize}
     \end{minipage}
 }
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2011 - 2016 & Bachelors of Science (Computer Science) at \textbf{University Of Cincinnati} \hfill \normalsize \\
-
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -170,6 +189,30 @@ Skilled \textbf{Software Engineer} with experience using \texttt{C\#}, Python, J
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2011 - 2016 & Bachelors of Science (Computer Science) at \textbf{University Of Cincinnati} \hfill \normalsize \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Areas Of Interest
+%----------------------------------------------------------------------------------------
+\section{Areas Of Interest}
+\begin{center}
+    \begin{tabular}{|p{0.3\textwidth} | p{0.3\textwidth} | p{0.3\textwidth}|}        
+        \hline
+        Asp.Net Core & Web API & React \\
+        \hline
+        Angular & Typescript & \texttt{CI/CD} \\
+        \hline
+        Azure & AWS \\
+        \hline
+\end{tabular}
+\end{center}
+
+%----------------------------------------------------------------------------------------
 %	ACTIVITIES
 %----------------------------------------------------------------------------------------
 \section{Activities}
@@ -184,54 +227,6 @@ Skilled \textbf{Software Engineer} with experience using \texttt{C\#}, Python, J
 \begin{tabularx}{\linewidth}{@{}l r@{}}	
     \textbf{Treasurer} & \hfill - University of Cincinnati Robotics Team 2012 - 2014 \\[3.75pt]
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
-\begin{itemize}
-    \item \texttt{C\#}
-    \item Linux
-    \item C++
-    \item HTML
-    \item WinForms
-\end{itemize}
-&
-\begin{itemize}
-    \item .Net
-    \item Java
-    \item Git
-    \item CSS
-    \item WPF    
-\end{itemize}
-&
-\begin{itemize}
-    \item SQL
-    \item Python
-    \item JavaScript
-    \item Batch
-    \item Qt
-\end{itemize}
-\end{tabular}
-
-\section{Areas Of Interest}
-\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
-\begin{itemize}
-    \item Asp.Net Core
-    \item Angular
-\end{itemize}
-&
-\begin{itemize}
-    \item Web API
-    \item Typescript
-\end{itemize}
-&
-\begin{itemize}
-    \item React
-    \item \texttt{CI/CD}
-\end{itemize}
-\end{tabular}
 
 \vfill
 % \center{\footnotesize Last updated: \today}
