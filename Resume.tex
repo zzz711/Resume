@@ -35,7 +35,7 @@
 
 \usepackage{fix-cm}
 \makeatletter
-\newcommand\HUGE{\@setfontsize\Huge{50}{60}}
+\newcommand\HUGE{\@setfontsize\Huge{40}{50}}
 \makeatother
 
 %tabularx environment
@@ -76,6 +76,8 @@
 %for social icons
 \usepackage{fontawesome5}
 
+\usepackage{fancyhdr}
+
 %debug page outer frames
 %\usepackage{showframe}
 
@@ -85,7 +87,13 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+%\pagestyle{empty} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LH]{Pete kayuha}
+
+\renewcommand{\headrulewidth}{0pt}
+
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -112,6 +120,20 @@ Dayton, OH 45402
 \HUGE{Software Developer} \\[7.5pt]
 Detail-oriented and customer-focused \textbf{Software Engineer} with experience in \texttt{C\#}, SQL, and .Net. Proven track record of enhancing legacy applications, adding new functionality, and modernizing codebases to improve usability and performance. Strong problem solver with a background in both QA and software engineering, bringing a thoughtful, efficient approach to building and maintaining reliable, user-centered software.
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Core Strengths
+%----------------------------------------------------------------------------------------
+\section{Core Strengths}
+\begin{center}
+    \begin{itemize}
+        \item Collaborative problem-solver
+        \item Clear and proactive communicator
+        \item Self-starter with a growth mindset
+        \item Analytical thinker with strong attention to detail
+        \item Adaptable in fast-paced environments
+    \end{itemize}
+\end{center}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -149,7 +171,7 @@ Detail-oriented and customer-focused \textbf{Software Engineer} with experience 
         \item[--] Created quiz application using \texttt{C\#}, ASP.NET Core, Blazor, and SQL.
         \item[--] Updated \texttt{C\#} and C++ code to connect to SQL database using SSL.
         \item[--] Added functionality to in house WPF applications using \texttt{C\#}.
-        \item[--] Modified and added functionality to a Windows Form application using \texttt{C\#} and SQL.
+        \item[--] Modified and added functionality to a Windows Form applications using \texttt{C\#} and SQL.
         \item[--] Extended functionality of an application using Java and OpenMap library.
         \item[--] Upgraded \texttt{C\#} and C++ code base to Visual Studio 2017.
     \end{itemize}
@@ -193,7 +215,7 @@ Detail-oriented and customer-focused \textbf{Software Engineer} with experience 
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2011 - 2016 & Bachelors of Science (Computer Science) at \textbf{University Of Cincinnati} \hfill \normalsize \\
+Bachelors of Science (Computer Science) at \textbf{University Of Cincinnati} 2011 - 2016 \hfill \normalsize \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
